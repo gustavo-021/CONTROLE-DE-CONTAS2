@@ -10,7 +10,7 @@
 
   <div class="container">
     <h1>Cadastro de Contas a Pagar</h1>
-    <form id="formCadastro" onsubmit="return validarFormulario()">
+    <form id="formCadastro">
       <label for="fornecedor">Fornecedor:</label>
       <input type="text" id="fornecedor" name="fornecedor" required>
 
@@ -45,15 +45,10 @@
         <!-- As contas cadastradas serão listadas aqui -->
       </tbody>
     </table>
-    <button onclick="salvarDados()">Salvar Dados</button>
 
-    <button onclick="exportarCSV()">Exportar para CSV</button>
-    <button onclick="gerarPDF()">Gerar PDF</button>
+    <button onclick="salvarNoGitHub()">Salvar Dados no GitHub</button>
   </div>
 
   <script src="script.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-
 </body>
 </html>
